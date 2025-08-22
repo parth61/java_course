@@ -10,11 +10,12 @@ public class DiceGame {
         Random rand = new Random();
 
         for  (int i = 1; i <= rolls; i++) {
-            int die = rand.nextInt(6)+1;
+//            int die = rand.nextInt(6)+1;
+            int die = 4;
             total = total + die;
             System.out.printf("Roll #%d: You've rolled a %d.",i,die);
             if (total == goal) {
-                System.out.printf("You are on space %d. Congrats you win!.", die);
+                System.out.printf("You are on space %d. Congrats you win!.", total);
                 break;
             }
             else if (total > goal) {
@@ -22,7 +23,7 @@ public class DiceGame {
                 break;
             } else if (i == rolls) {
                 System.out.printf("Unfortunately you didn't make it to %d spaces. You Lose!", goal);
-                break;
+
             }
             else{
                 System.out.print("You are now on space " + total + " and have " + (goal-total) + " more to go.");
