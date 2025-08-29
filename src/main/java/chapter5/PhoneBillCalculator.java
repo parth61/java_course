@@ -3,8 +3,6 @@ package chapter5;
 import java.util.Scanner;
 
 public class PhoneBillCalculator {
-    static double chargePerMin = 0.25;
-    static double taxPercent = 0.15;
     static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         double planFee = planFee();
@@ -25,12 +23,14 @@ public class PhoneBillCalculator {
     //overage mins
     public static double overageCharge() {
         System.out.print("Please enter your overage mins: ");
+        double chargePerMin = 0.25;
         double overageMins = input.nextDouble();
         double overageCharge = overageMins * chargePerMin;
         return overageCharge;
     }
     //calculate overage mins
     public static double totalTax(double planfee, double overagecharge) {
+        double taxPercent = 0.15;
        double totalTax = (planfee + overagecharge)*taxPercent;
        return totalTax;
     }
