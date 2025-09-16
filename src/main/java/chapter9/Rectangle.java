@@ -1,7 +1,7 @@
 package chapter9;
 
 public class Rectangle {
-    double length;
+    protected double length;
     double width;
     int sides = 4;
 

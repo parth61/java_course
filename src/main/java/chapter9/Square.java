@@ -8,5 +8,6 @@ public class Square extends Rectangle {
     }
     public void print(String text){
         System.out.println("I am a Square");
+
     }
 }
