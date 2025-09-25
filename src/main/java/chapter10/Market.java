@@ -20,6 +20,7 @@ public class Market {
         squeeze(banana);
         squeeze(orange);
         squeeze(banana2);
+
     }
     public static void squeeze(Fruit fruit){
         System.out.println("Squeezing...");

@@ -1,6 +1,7 @@
 package chapter11;
 
-public class Book implements Product{
+@SuppressWarnings("ALL")
+public class Book implements Product {
 
     private double price;
     private String name;
@@ -38,26 +39,32 @@ public class Book implements Product{
         this.color = color;
     }
 
+    @SuppressWarnings("unused")
     public String getAuthor() {
         return author;
     }
 
+    @SuppressWarnings("unused")
     public void setAuthor(String author) {
         this.author = author;
     }
 
+    @SuppressWarnings("unused")
     public int getPages() {
         return pages;
     }
 
+    @SuppressWarnings("unused")
     public void setPages(int pages) {
         this.pages = pages;
     }
 
+    @SuppressWarnings("unused")
     public String getIsbn() {
         return isbn;
     }
 
+    @SuppressWarnings("unused")
     public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
