@@ -10,9 +10,8 @@ public class LoanQualifier {
         int salary = input.nextInt();
         System.out.println("Enter your years");
         double years = input.nextDouble();
-        if (salary >= requiredsalary) {
-            if(years >= requiredyear) {
-                System.out.println("You have qualified");
+        if (salary >= requiredsalary) {if(years >= requiredyear)
+            System.out.println("You have qualified");
             }
             else System.out.println("You have not completed years");
         }

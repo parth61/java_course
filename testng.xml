@@ -7,6 +7,7 @@
             <class name="demo">
                 <methods>
                     <include name="openChrome"/>
+                    <include name="setUp"/>
                 </methods>
             </class>
         </classes>
@@ -16,6 +17,7 @@
             <class name="demo">
                 <methods>
                     <include name="setUp"/>
+                    <include name="openChrome"/>
                 </methods>
             </class>
         </classes>

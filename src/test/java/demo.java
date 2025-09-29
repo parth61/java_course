@@ -1,14 +1,26 @@
+import org.testng.Assert;
 import org.testng.annotations.*;
-
+//@Test
 public class demo {
-    @Test(groups = "smoke")
+    @Test(groups = "smoke", priority = 2)
     public void openChrome() {
-        System.out.println("Test Method");
+        System.out.println("Open Chrome Test Method");
     }
-    @Test(groups = "sanity")
-    public void setUp() {
-        System.out.println("Second Test Method");
+    @Test(priority = 1)
+    void setUp() {
+        System.out.println("Set Up Test Method");
     }
+
+    @Test
+    public void assertMethod(){
+        Assert.assertEquals(true, true, "Incorrect");
+        System.out.println("Assert Method ");
+        Assert.assertFalse(false, "False Assert");
+        System.out.println("False Assert");
+        Assert.assertTrue(true, "True Assert");
+        System.out.println("True Assert");
+    }
+
     @BeforeMethod
     public void beforeMethod(){
         System.out.println("BeforeMethod");
