@@ -1,5 +1,6 @@
 import org.testng.Assert;
 import org.testng.annotations.*;
+
 //@Test
 public class demo {
     @Test(groups = "smoke", priority = 2)
